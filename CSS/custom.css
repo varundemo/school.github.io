@@ -1,0 +1,59 @@
+.new-col,a:nth-child(4){
+	background-color: #29d0c5 !important;
+	opacity: 0.7 !important;
+}
+header  h1{
+	color:#29d0c5 !important;
+}
+a:nth-child(4){
+	color:white;
+}
+.first_ui > li{
+	font-weight: 600 !important;
+	font-size: 20px;
+}
+.navbar-brand{
+	font-weight: 1200 !important;
+}
+
+
+/* change brand name font */
+.navbar-brand{font-family: 'Ubuntu' , san-serif;
+    font-size:2em;
+    font-weight: bold;
+}
+
+.nav-item a{
+	color:#fff;
+}
+.nav-item a:hover{
+	color:#F0AAB1;
+}
+
+/*header image*/
+.back-image{
+	background-size:cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	min-height: 90vh;
+	border-radius: 0px;
+	margin-top: 74px;
+}
+
+/*header image sub-title*/
+.aim{
+	font-size:24px;
+}
+a{
+	color:black;
+}
+.active{
+	color:white;
+	background-color:#DC3545;
+}
+a::hover{
+	color:#f26571;
+}
+
+
+
