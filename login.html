@@ -1,0 +1,81 @@
+<!DOCTYPE>
+<head>
+<style>
+
+body{
+margin:0;
+padding:0;
+box-sizing:border-box;
+background:orange;
+}
+.one:hover{
+border:3px solid red;
+}
+.one{
+border-radius:20px;
+border:3px solid white;
+background:black;
+height:300px;
+width:200px;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+color:white;
+padding:20px;
+}
+.two{
+border:2px solid white;
+background:red;
+height:100px;
+width:100px;
+border-radius:50%;
+position:relative;
+left:50px;
+top:-70px;
+}
+.three{
+border:2px solid orange;
+background:grey;
+height:50px;
+width:50px;
+border-radius:50%;
+position:relative;
+top:24%;
+left:23%;
+}
+input[type="text"], input[type="password"]{
+//margin-left:10%;
+border:none;
+height:30px;
+color:white;
+background:black;
+border-bottom:1px solid white;
+outline:none;
+//padding-top:10px;
+}
+.btn{
+background:red;
+}
+.btn:hover{
+background:orange;
+color:white;
+}
+</style>
+</head>
+<html>
+<body>
+<div class="one">
+<div class="two">
+<div class="three">
+</div>
+</div>
+<label style="color:white;  font-size:20px; font-family:sans serif; font-weight:bold;">Name</label>
+<input type="text" name="" placeholder="Enter Your Name"><br></br>
+<label style="color:white;  font-size:20px; font-family:sans serif; font-weight:bold; margin-top:10px;">Password</label>
+<input type="password" name="" placeholder="Enter Your Name">
+<input type="submit" class="btn" style="margin-top:15px; padding:10px 35px; position:relative; left:40px; outline:none; cursor:pointer; border-radius:20px; border:none; ">Login</button>
+</div>
+
+</body>
+</html>
