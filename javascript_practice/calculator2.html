@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculator</title>
+	<style>
+		.container{
+			display: none;
+			text-align:center;
+			width:280px;
+			margin: auto;
+			background-color: #7eda7e;
+			border-radius: 10px;
+		}
+		.table{
+			margin:auto;
+			width:270px;
+			height: 300px;
+			padding:10px;
+		}
+		button{
+			font-size: 22px;
+			width: 60px;
+			height: 60px;
+			border-radius: 10px;
+			background-color: #e6d9d6;
+		}
+		.in{
+			margin-top: 15px;
+			height: 50px;
+			border: 2px solid blue;
+			width: 240px;
+			background-color: #87ceeb5e;
+			border-radius: 10px;
+		}
+		#cal{
+			position: absolute;
+			top:40px;
+			right: 650px;
+		}
+		/*td:last-child{
+			padding-right:  10px;
+		}
+		td:first-child{
+			padding-left:  10px;
+		}*/
+	</style>
+</head>
+<body>
+	<div class="container" id="cont">
+		<input class="in" type="text">
+		<table class="table">
+			<tr>
+				<td><button>7</button></td>
+				<td><button>8</button></td>
+				<td><button>9</button></td>
+				<td><button>C</button></td>
+			</tr>
+			<tr>
+				<td><button>4</button></td>
+				<td><button>5</button></td>
+				<td><button>6</button></td>
+				<td><button>+</button></td>
+			</tr>
+			<tr>
+				<td><button>1</button></td>
+				<td><button>2</button></td>
+				<td><button>3</button></td>
+				<td><button>-</button></td>
+			</tr>
+			<tr>
+				<td><button>0</button></td>
+				<td><button>X</button></td>
+				<td><button>/</button></td>
+				<td><button>=</button></td>
+			</tr>
+		</table>
+	</div>
+	<div class="btn" style="text-align: center; ">
+		<input type="button" name="" value="Calculator" id="cal" style="padding: 10px; background-color: skyblue; color: white; border-radius: 10px; border:solid 2px skyblue; cursor:pointer;">
+	</div>
+	<div class="btn" style="text-align: center; ">
+		<input type="button" name="" value="Back" id="back" style="padding: 10px; background-color: skyblue; color: white; border-radius: 10px; border:solid 2px skyblue;">
+	</div>
+
+<script>
+	var cal = document.getElementById('cal');
+	cal.addEventListener("click",function(){
+		console.log("button clicked");
+		cont = document.getElementById('cont');
+		cont.style.display = "block";
+		cal.style.display = "none";
+		back = document.getElementById('back');
+		console.log(back);
+		// back.style.display = "inline";
+		var bod = document.querySelector("body");
+		bod.addEventListener("dblclick",function(){
+		console.log(bod);
+			cont = document.getElementById('cont');
+			cont.style.display = "none";
+				});
+	});
+
+		var back = document.getElementById('back');
+		 back.addEventListener("click", function(){
+		 	cont = document.getElementById('cont');
+		 	cont.style.display = "none";
+		 	back.style.display = "none";
+		 	cal.style.display = "block";
+
+		});
+
+		// var bod = document.querySelector("body");
+		// console.log(bod);
+		// bod.addEventListener("click",function(){
+		// 	cont = document.getElementById('cont');
+		// 	cont.style.display = "none";
+		// });
+		// if(cal){
+		// 	console.log("Button Clicked one");
+		// }
+
+</script>	
+</html>
+</body>
