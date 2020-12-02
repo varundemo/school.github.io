@@ -1,0 +1,5 @@
+File Zilla 
+1. Instal file Zilla client.-->Open file Zilla -->To connect to server enter host, username, password, port(22(sftp)) --> Then 
+click Quickconnect --> click I trust this server --> we are in server
+2. I want to go -->/var/www/html -->Enter --> You are on that path --> Now drag and drop your files after making changes
+in the dbConnection password --> command sudo service apache2 restart --> second command ls --> You can check files.

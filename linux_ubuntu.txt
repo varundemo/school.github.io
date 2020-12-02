@@ -1,0 +1,26 @@
+Linux - Ubuntu
+1. command ls --> Tells about the files and folders in the directory we are.
+2. pwd(print working directory) --> Tells in which directory we are.
+3. cd / --> Takes you through / directory. cd(change directory)
+4. cd.. --> To go back.
+5. mkdr directory_name --> To create new direcotry.
+6. touch 1.txt --> create a blank file.
+7. mv 1.txt folder_name/ --> To move any file to any folder.
+8. cp 2.txt folder_name/ --> To copy any file to any folder.
+9. Users in Linux --> 
+(i) Regular user($ sign) --> Have access to only their own directory.
+(ii) Root user --> Have access to all the directory using 'sudo'.
+10. '/' --> It is root node.
+11. Path -->
+(i) Absolute --> To go to the typical.
+(ii) Relative --> To go to the straight forward path.
+12. sudo apt-get(or apt) update --> To update list of software in computer,
+13. sudo apt-get upgrade --> Install software.
+14. ls -R(reccursive) --> Tells about the directory and sub-directory files and folders.
+15. touch .file_name --> file name starting with dot called hidden file.
+16. ls -a --> It also show hidden file.
+17. ls -lart 
+18. sudo apt install apache2 --> To install server.
+19. ls -l --> user - group - other.
+20. chmode calculator --> to give permission to owner(user) - group - other.
+21. chmode 734(chmode claculator) file_name 

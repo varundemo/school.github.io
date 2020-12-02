@@ -1,0 +1,48 @@
+1. (i) sort($arr) --> Array values in assending order, array key will replace with numeric values starting from 0.
+  (ii) rsort($arr) --> Array values in descending order, array key will replace with numeric values starting from 0.
+  (iii) ksort($arr) --> Keys values in the assending order, key won't become numeric here.
+  (iv) krsort($arr) --> Keys values in the decending order, key won't become numeric here.
+  (v) asort($arr) -->  Array values in assending order, array key will not replace with numeric values.
+  (vi) arsort($arr) -->  Array values in desending order, array key will not replace with numeric values.
+
+2. (i) array_pop($arr) --> Remove the last value of array. 
+    (ii) array_shift($arr) --> Remove the first value of array. 
+    (iii) unset($arr['array key'] --> Remove sepecific value of array.
+    (iv) array_push($arr,"value_name",...) --> Add values at the end of the array.
+    (v) array_unshift($arr,"value_name",...) --> Add values at the start of the array.
+
+3. (i) count($arr) --> Count the number of keys in the array.
+    (ii) array_count_values($arr) --> It return an array. Which show no. of times the value is written. To find duplicate 
+value.
+   
+4. (i) array_merge --> Return an array which is merge of  two or more arrays.If keys of both the arrays are same than the
+ key of latter array will overwite first array key. 
+   (ii) array_merge_recursive --> This is same as the array_merge function. But in this if both the arrays have same key 
+than they make a sub-array with the numeric key of that array.
+
+5. (i) array_key_exists('key_name',$arr) --> check if key exists in that array returns true and false. It is case sensitive.
+    (ii) isset( ) --> can use to find if value exists of variable, array,array keys etc.
+    (iii) in_array('value',$arr, true/false ) --> Find if value exists in array or not true is used to specify datatype.
+    (iv) array_search("value",$arr) --> return key of that array whose value is given. If value not found return flase.
+
+6. (i) array_replace($arr,$new_arr) -->  Replaces the keys with their values in the array with other one. If array not there it will add that array.
+   (ii) array_replace_recursive($arr,$new_arr) --> Use to replace and add keys and their values for two-D arrays.
+
+7. (i) array_slice($arr,2,2) --> return a new extracted array starting from the positon(2) that is specify to that number(2). (-) if you want to start the value from last. True if you want for numerical array the keys will remains their positions. 
+    (ii) array_splice($arr,2,2,array(‘Red’,’Green’) --> It extracted and delete keys from that array($arr). Can also give new values for the extracted array.
+
+8. (i) range(‘A’,’Z’,2) --> Return an array which is from first parameter to second parameter. The third parameter is given for interval for the range.
+   (ii) shuffle($arr) --> Shuffles the values of array.
+   (iii) array_rand($arr) --> return a random key from array. 
+   (iv) array_reverse --> Return a reverse array.
+   
+9. (i) array_keys --> Return all the keys in the array in numeric format.
+   (ii) array_values --> Return all the values in the array in numeric format.
+   (iii) array_combine($arr1,$arr2) --> combine the two arrays, array at first parameter become keys and array at second position become values.
+
+10. (i) array_flip($arr) --> Return an array whose keys and values are replace with each other.
+    (ii) array_sum($arr) --> Return sum of numeric array.
+    (iii) array_filter($arr) --> Return an array and remove if value is empty or zero.
+
+11. (i) array_walk
+    (ii) array_map
