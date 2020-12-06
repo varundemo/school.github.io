@@ -1,0 +1,56 @@
+Moodle -->
+
+1. all checkbox setting is save in config table in database.
+2. To change the checkbox text from admin panel go to --> Language>language customisation>click language 'English'>open language pack> after language pack loaded> filter strings > put string 'identifier' in the input box.> select from 'show string of these component' (that will be 'block_html in that case') > Now you can edit block text. 
+3. All boxes on the moodle site are 'block' --> on dashboard page when you click 'custom this page' on the top-left side of the page, then 'add a block' option appear on the right side of the side-bar. where you can add any block to the page.
+4. Create my own block --> create a folder name it 'testblock'. Add version File in it. --> change names in the version file to testblock.
+5. Then we need block_html file --> which has boclk_html class which extends another class. --> It it content text and footer are there
+6. New create a file in db>access.php --> This file is use to allow who can create this block or edit this block.
+7. Block table in database has rows according to the plugin which it got. -->When we update Moodle databse than our new 'testblock' row is created in Block table.
+8. Also in the 'mdl_block_instances' table there is a row called 'testblock'.  
+8. Now testblock is added in the site.
+9. All pages have defined('MOODLE_INTERNAL') || die(); so that file can only be access internal moodle except the my>index.php file so it can be access.
+10. Any Moodle page which does not have html it will die().
+11. Now make courses --> Go to --> Development>make test course > course is ready. 
+12. To check its any enrol user --> go to setting top-right of the page > more > user > enrolled users (one student)
+13. admin > setting > plugin.php --> This page load all the plugin to admin tree.
+
+14. Theme can be seen in the config_plugin table.
+15. To allow plugin or theme update run a command --> php admin/cli/upgrade.php --> check your theme in the database in the plugin table.
+16.To set theme go to site administration> Apparance >Theme selector > change theme from the right side by clicking 'change theme' or 'use theme'(slow to load)
+17. If do any change it will not show, because of pluge_cahes. For that run a command 'php admin/cli/purge_caches.php'(slow load)
+18. Basic files for theme --> lang folder> en > theme_theme_name.php, pix > pics, config.php, lib.php, version.php
+19. searh child theme moodle. copy code for version file from the doc-->change the name for your theme. same with the lang>en>theme_name.php 
+20. config.php file tells which file to include.
+20. config file will tell theme to include css file copy paste code from child theme moodle web page to the config.php file --> change the name according to your choice
+21. same thing to be done for the lib.php file. copy paste code
+22. the above code will add bost css. to add your own css add more line code to the lib.php file.
+.Same thing for the lib file. and same for the config file.
+23. make a folder scss > file 
+
+Child Theme-->
+1.Make a theme_name folder
+2.Make a version file
+3.Copy paste code from Doc to the version file and change name according to your theme.
+4.Make a lang folder > Make a en folder > Make a file theme_name.
+5.Copy paste code from Doc to this file and change name according to your theme.
+6.Make a pixs folder
+7.Copy two images from Boost theme folder > pixs folder and paste them in your pixs folder.
+8.Make a lib file.
+9.Copy paste code from Doc to this file and change name according to your theme.
+10. Make a config file.
+11.Copy paste code from Doc to this file and change name according to your theme.
+12. Theme files are in config_plugin table in database with the row name theme_theme_name.
+13. Child theme is ready by php admin/cli/upgrade.php command.
+
+To Add Theme setting on Site administration > Appearance or To Add CSS File -->
+1.Copy paste code from Doc to this config file and change name according to your theme.
+2. Code tells Theme to use css and the function which return the css function from the lib file.
+3. Tell pre post css code for to the lib file.
+4. Make a folder scss > make a file post.css.
+5. Now select componet ID(eg- page-content) and use it to the post.css page and add any kind of css.
+6. Add code by copy paste from doc to lang>en>theme_theme_name.php
+7. Make a setting.php page  
+8. Add code by copy paste from doc to setting file.
+9. Now use php admin/cli/purge_caches.php
+10. Now new setting is added in appearance and css is added.  
