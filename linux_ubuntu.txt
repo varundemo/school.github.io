@@ -24,3 +24,5 @@ Linux - Ubuntu
 19. ls -l --> user - group - other.
 20. chmode calculator --> to give permission to owner(user) - group - other.
 21. chmode 734(chmode claculator) file_name 
+________________________________________________
+Need to start from ---> boost\amd\src\aria.js:
